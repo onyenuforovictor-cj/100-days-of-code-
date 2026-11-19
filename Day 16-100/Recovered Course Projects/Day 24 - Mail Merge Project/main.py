@@ -7,5 +7,5 @@ with open("./input/letters/starting_letter.txt") as letter_file:
 for name in names:
     stripped_name = name.strip()
     letter = letters.replace(PLACEHOLDER, stripped_name)
-    with (open(f"./output/ReadyToSend/"  f"letter_for_{stripped_name}.docx", "w")as completed_letter):
+    with (open(f"./output/ReadyToSend/"  f"letter_for_{stripped_name}.txt", "w")as completed_letter):
         completed_letter.write(letter)
